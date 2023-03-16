@@ -6,8 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/XRTest.unity
-    guid: 13b4f3a250ee32a45bd0bca10c95d345
+    path: Assets/Scenes/OfflineScene.unity
+    guid: 7550f33ed4db95f45b6cac83906cbc0d
+  - enabled: 1
+    path: Assets/Scenes/OnlineScene.unity
+    guid: 7bbfbbe8249e2de4ea625da8b4a0a6ac
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dffbf06c6757d9f4cb2facc46833b7f1, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c59c0041a750d68418197e7434f72ae1, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 4afba00bfc78b9d44ad882bde0ea8b17, type: 2}
