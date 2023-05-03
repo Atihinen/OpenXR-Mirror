@@ -50,6 +50,7 @@ MonoBehaviour:
   Head: {fileID: 50370171954735045}
   LeftController: {fileID: 50370173211946983}
   RightController: {fileID: 50370171877208838}
+  CameraOffSet: {fileID: 50370172541399002}
 --- !u!1001 &418886631665428069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,6 +138,14 @@ PrefabInstance:
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].outWeight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 388114735258714528, guid: 9c63e0bb32383f7469692904c1d70fde, type: 3}
+      propertyPath: m_Name
+      value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 388114735258714528, guid: 9c63e0bb32383f7469692904c1d70fde, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 388114735943469446, guid: 9c63e0bb32383f7469692904c1d70fde, type: 3}
       propertyPath: m_Parameters.widthMultiplier
       value: 0.02
@@ -176,6 +185,11 @@ GameObject:
 --- !u!4 &50370172167940734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 388114734916537371, guid: 9c63e0bb32383f7469692904c1d70fde, type: 3}
+  m_PrefabInstance: {fileID: 418886631665428069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50370172541399002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 388114735272888767, guid: 9c63e0bb32383f7469692904c1d70fde, type: 3}
   m_PrefabInstance: {fileID: 418886631665428069}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &50370173211946983 stripped

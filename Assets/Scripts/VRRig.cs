@@ -20,6 +20,16 @@ public class VRMap
         rigTarget.position = transform.TransformPoint(trackingPositionOffset);
         rigTarget.rotation = transform.rotation * Quaternion.Euler(trackingRotationOffset);
     }
+
+    public Quaternion GetTragetRotation()
+    {
+        return rigTarget.rotation;
+    }
+
+    public Vector3 GetTargetPosition()
+    {
+        return rigTarget.position;
+    }
 }
 public class VRRig : MonoBehaviour
 {
