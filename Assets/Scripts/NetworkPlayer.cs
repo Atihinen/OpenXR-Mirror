@@ -28,19 +28,18 @@ public class NetworkPlayer : NetworkBehaviour
     public VRRig vrRig;
     public GameObject XRPlayerPrefab;
     private GameObject xrPlayer;
-    private bool canUpdate = false;
     // Start is called before the first frame update
     public override void OnStartLocalPlayer()
     {
         if (isLocalPlayer && isOwned)
         {
+            // Setup local open XR client
             vrRig.localRig = false;
             rigTransform = vrRig.transform;
             rigTransform.SetParent(transform);
             xrPlayer = Instantiate(XRPlayerPrefab);
             xrPlayer.transform.SetParent(transform);
             xrPlayer.transform.localPosition = new Vector3(0, 0, 0);
-            //Camera.main.gameObject.SetActive(false);
             ClientXRRig cxrRig = xrPlayer.GetComponent<ClientXRRig>();
             vrRig.head.vrTarget = cxrRig.Head.transform;
             vrRig.leftHand.vrTarget = cxrRig.LeftController.transform;
@@ -50,6 +49,7 @@ public class NetworkPlayer : NetworkBehaviour
             cameraTransform.parent = cxrRig.CameraOffSet.transform;  //Make the camera a child of the mount point
             cameraTransform.position = cxrRig.CameraOffSet.transform.position;  //Set position/rotation same as the mount point
             cameraTransform.rotation = cxrRig.CameraOffSet.transform.rotation;
+            // Prepare for server binding
             headTransform = vrRig.head.vrTarget;
             rightHandTransform = vrRig.rightHand.vrTarget;
             leftHandTransform = vrRig.leftHand.vrTarget;
@@ -59,12 +59,10 @@ public class NetworkPlayer : NetworkBehaviour
                 rightHandTransform.rotation,
                 leftHandTransform.position,
                 leftHandTransform.rotation);
-            canUpdate = true;
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!isLocalPlayer)
         {
