@@ -24,3 +24,4 @@ Basic template with Unity openXR and Mirror networking
 ## Tutorials used to create this template
 
   * https://www.youtube.com/watch?v=tBYl-aSxUe0
+  * https://www.youtube.com/watch?v=_Zrde_WTaiI
