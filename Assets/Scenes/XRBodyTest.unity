@@ -227,15 +227,19 @@ PrefabInstance:
     - target: {fileID: 1138238657, guid: bf1d60d089b8d744881454045f0f4555, type: 3}
       propertyPath: head.vrTarget
       value: 
-      objectReference: {fileID: 571275245}
+      objectReference: {fileID: 974341352}
+    - target: {fileID: 1138238657, guid: bf1d60d089b8d744881454045f0f4555, type: 3}
+      propertyPath: vrRigTransform
+      value: 
+      objectReference: {fileID: 1368780505}
     - target: {fileID: 1138238657, guid: bf1d60d089b8d744881454045f0f4555, type: 3}
       propertyPath: leftHand.vrTarget
       value: 
-      objectReference: {fileID: 1275800167}
+      objectReference: {fileID: 1160709494}
     - target: {fileID: 1138238657, guid: bf1d60d089b8d744881454045f0f4555, type: 3}
       propertyPath: rightHand.vrTarget
       value: 
-      objectReference: {fileID: 1345849023}
+      objectReference: {fileID: 1956963205}
     - target: {fileID: 685773582624626975, guid: bf1d60d089b8d744881454045f0f4555, type: 3}
       propertyPath: m_Name
       value: Robot Kyle
@@ -286,19 +290,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1d60d089b8d744881454045f0f4555, type: 3}
---- !u!4 &571275245 stripped
+--- !u!4 &974341352 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 50370171954735044, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1713950862846617670, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
   m_PrefabInstance: {fileID: 418886633175485841}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1275800167 stripped
+--- !u!4 &1160709494 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 50370173211946982, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 486603327378288212, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
   m_PrefabInstance: {fileID: 418886633175485841}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1345849023 stripped
+--- !u!4 &1368780505 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 50370171877208837, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8987779540851870407, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
   m_PrefabInstance: {fileID: 418886633175485841}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1523158077
@@ -399,6 +403,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1956963205 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 821351382526916584, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
+  m_PrefabInstance: {fileID: 418886633175485841}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &418886633175485841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 50370172167940736, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 811175734102223691, guid: 4a46fcdb268cf404c9b93d1ac72490cc, type: 3}
       propertyPath: m_RootOrder
       value: 3
