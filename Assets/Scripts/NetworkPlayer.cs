@@ -61,8 +61,10 @@ public class NetworkPlayer : NetworkBehaviour
                 rightHandTransform.rotation,
                 leftHandTransform.position,
                 leftHandTransform.rotation);
-            if(cxrRig.Head.transform.position.y < 0.1)
+            Debug.Log("Player head y: " + cxrRig.Head.transform.position.y.ToString());
+            if(cxrRig.Head.transform.position.y < 0.1f)
             {
+                Debug.Log("Player respawned");
                 enm.ReplacePlayer(connectionToClient);
             }
         }
