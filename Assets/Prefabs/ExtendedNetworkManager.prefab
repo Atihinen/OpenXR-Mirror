@@ -50,7 +50,7 @@ MonoBehaviour:
   runInBackground: 1
   autoStartServerBuild: 1
   autoConnectClientBuild: 0
-  sendRate: 30
+  sendRate: 64
   offlineScene: Assets/Scenes/OfflineScene.unity
   onlineScene: Assets/Scenes/OnlineScene.unity
   transport: {fileID: 4337223471883740668}
