@@ -401,6 +401,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (action based)
       objectReference: {fileID: 0}
+    - target: {fileID: 4374192463567774834, guid: 04ae6d9f73876d54b8e6436d682d3309, type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Id
+      value: 53de8e54-0921-4140-aca8-fc106f6cbfda
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374192463567774834, guid: 04ae6d9f73876d54b8e6436d682d3309, type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Id
+      value: 3dd2bc45-ba2a-4f30-89f4-e7c7505e7aa5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374192463567774834, guid: 04ae6d9f73876d54b8e6436d682d3309, type: 3}
+      propertyPath: m_TrackingStateInput.m_Action.m_Id
+      value: 8d59e60b-697c-48dc-aad7-fbf9aeb6a43d
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374192463567774834, guid: 04ae6d9f73876d54b8e6436d682d3309, type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 4654b28b-f906-4295-802a-79b509b71f5a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374192463567774834, guid: 04ae6d9f73876d54b8e6436d682d3309, type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 9c304ebd-94ad-4a32-a65a-53e81eb70a25
+      objectReference: {fileID: 0}
     - target: {fileID: 8143017920150585350, guid: 04ae6d9f73876d54b8e6436d682d3309, type: 3}
       propertyPath: m_LocomotionProvider
       value: 

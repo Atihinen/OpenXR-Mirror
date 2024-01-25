@@ -28,12 +28,14 @@ public class NetworkPlayer : NetworkBehaviour
     public VRRig vrRig;
     public GameObject XRPlayerPrefab;
     private GameObject xrPlayer;
+    private ExtendedNetworkManager enm;
     // Start is called before the first frame update
     public override void OnStartLocalPlayer()
     {
         if (isLocalPlayer && isOwned)
         {
             // Setup local open XR client
+            enm = GameObject.Find("ExtendedNetworkManager").GetComponent<ExtendedNetworkManager>();
             vrRig.localRig = false;
             rigTransform = vrRig.transform;
             rigTransform.SetParent(transform);
@@ -59,6 +61,12 @@ public class NetworkPlayer : NetworkBehaviour
                 rightHandTransform.rotation,
                 leftHandTransform.position,
                 leftHandTransform.rotation);
+            Debug.Log("Player head y: " + cxrRig.Head.transform.position.y.ToString());
+            if(cxrRig.Head.transform.position.y < 0.1f)
+            {
+                Debug.Log("Player respawned");
+                enm.ReplacePlayer(connectionToClient);
+            }
         }
     }
 
@@ -105,6 +113,8 @@ public class NetworkPlayer : NetworkBehaviour
         UpdateRightHandForServer();
         UpdateLeftHandForServer();
     }
+
+
 
     //Syncvar methods
     #region Syncvar methods
@@ -166,4 +176,5 @@ public class NetworkPlayer : NetworkBehaviour
         leftHandPosition = lhPosition;
         leftHandRotation = lhRotation;
     }
+
 }
