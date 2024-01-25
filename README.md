@@ -3,7 +3,7 @@ Basic template with Unity openXR and Mirror networking
 
 # Software versions
 
-* Unity: 2021.3.19f1
+* Unity: 2022.3.18f1
 
 # Setup the project
 
